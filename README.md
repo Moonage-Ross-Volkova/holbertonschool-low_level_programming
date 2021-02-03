@@ -1,7 +1,1 @@
-# holbertonschool-zero_day
-Hi everyone!
-# holberton-system_engineering-devops
-
-# holberton-system_engineering-devops
-
-hello
+prints current working directory # holbertonschool-low_level_programming
