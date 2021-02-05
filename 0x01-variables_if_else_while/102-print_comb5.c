@@ -6,41 +6,28 @@
  */
 int main(void)
 {
-	int i, j, k, h;
+	int one, two;
 
-	i = 0;
-	j = i;
-	while (i < 10)
+	for (one = 0; one <= 99; one++)
 	{
-		while (j < 10)
+		for (two = one; two <= 99; two++)
+
 		{
-			k = i;
-			h = j + 1;
-			while (k < 10)
-			{
-				while (h < 10)
-				{
-					putchar(i + '0');
-					putchar(j + '0');
+			if (one != two)
+{
+				putchar((one / 10) + 48);
+				putchar((one % 10) + 48);
+				putchar(' ');
+				putchar((two / 10) + 48);
+				putchar((two % 10) + 48);
+
+				if (one != 98 || two != 99)
+{
+					putchar(',');
 					putchar(' ');
-					putchar(k + '0');
-					putchar(h + '0');
-					if ((i == 9) && (j == 8) && (k == 9) && (h == 9))
-						;
-					else
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					h++;
 				}
-				h = 0;
-				k++;
 			}
-			j++;
 		}
-		j = 0;
-		i++;
 	}
 	putchar('\n');
 	return (0);
